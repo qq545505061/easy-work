@@ -163,7 +163,7 @@ public class PoiWordUtils {
                     }
 
                     String fileName = value.substring(value.lastIndexOf("/") + 1);
-                    // 这里需要重新获取流，之前的流已经被BufferedImage使用掉了
+                    // 重新获取流，之前的流已经被BufferedImage使用掉了
                     run.addPicture(FileUtils.getInputStream(value), XWPFDocument.PICTURE_TYPE_JPEG, fileName, Units.toEMU(width), Units.toEMU(height));
                     run.setStyle(run.getStyle());
                     run.addCarriageReturn();

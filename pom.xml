@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.li</groupId>
+  <artifactId>easy-work</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>easy-work</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <commons-lang3.version>3.12.0</commons-lang3.version>
+    <commons.io.version>2.16.1</commons.io.version>
+    <poi.version>5.2.5</poi.version>
+    <documents4j.version>1.1.12</documents4j.version>
+    <slf4j-api.version>2.0.13</slf4j-api.version>
+  </properties>
+
+  <dependencies>
+
+    <!--io常用工具类 -->
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>${commons.io.version}</version>
+    </dependency>
+
+    <!-- commons-lang3工具类 -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${commons-lang3.version}</version>
+    </dependency>
+
+
+
+    <!-- POI Office文件操作工具 -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>${poi.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml-full</artifactId>
+      <version>${poi.version}</version>
+    </dependency>
+
+    <!-- documents4j Office文件转换工具-->
+    <dependency>
+      <groupId>com.documents4j</groupId>
+      <artifactId>documents4j-local</artifactId>
+      <version>${documents4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.documents4j</groupId>
+      <artifactId>documents4j-transformer-msoffice-word</artifactId>
+      <version>${documents4j.version}</version>
+    </dependency>
+
+    <!-- slf4j -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j-api.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>${slf4j-api.version}</version>
+    </dependency>
+
+  </dependencies>
+</project>
